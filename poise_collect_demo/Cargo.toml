@@ -1,0 +1,16 @@
+[package]
+name = "poise_collect_demo"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+poise = { version = "0.7.0", features = ["collector"] }
+tokio = { version = "1.53.1", features = [
+    "rt-multi-thread",
+    "fs",
+    "macros",
+    "signal",
+    "sync",
+] }
+poise_collect = { path = "../" }

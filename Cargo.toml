@@ -1,0 +1,11 @@
+[package]
+name = "poise_collect"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+inventory = "0.3"
+poise_collect_macro = { path = "./poise_collect_macro" }
+
+[workspace]
+members = ["poise_collect_demo", "poise_collect_macro"]
